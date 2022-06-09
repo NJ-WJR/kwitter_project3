@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Clickstagram Room</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <button id="logout" onclick="logOut()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        <center>
+            <div class="css-3d-text">Clickstagram</div>
+            <style>
+                .css-3d-text {
+                    font-size: 100px;
+                    color: lavender;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    text-shadow:
+                        0px 0px 0 rgb(37, 75, 163),
+                        1px 1px 0 rgb(32, 70, 158),
+                        2px 2px 0 rgb(27, 65, 153),
+                        3px 3px 0 rgb(22, 60, 148),
+                        4px 4px 0 rgb(17, 55, 143),
+                        5px 5px 0 rgb(12, 50, 138),
+                        6px 6px 0 rgb(7, 45, 133),
+                        7px 7px 0 rgb(2, 40, 128),
+                        8px 8px 0 rgb(-3, 35, 123),
+                        9px 9px 0 rgb(-8, 30, 118),
+                        10px 10px 0 rgb(-13, 25, 113),
+                        11px 11px 10px rgba(0, 0, 0, 1),
+                        11px 11px 1px rgba(0, 0, 0, 0.5),
+                        0px 0px 10px rgba(0, 0, 0, .2);
+                }
+            </style>
+            </h1>
+            <h3 id="user_name" class="color_white"></h3>
+            <div class="form-group input_div_room_page">
+                <label>#Add Room:</label>
+                <input type="text" id="room_name" class="form-control" placeholder="#Room Name">
+
+            </div>
+            <button onclick="AddRoom()" class="btn btn-success">#Add Room</button>
+            <h3 class="color_white">#TRENDINGROOMS</h3>
+            <div id="output"></div>
+        </center>
+    </div>
+    <script src="kwitter_room.js"></script>
+</body>
+
+</html>
